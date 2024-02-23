@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <main class="container">
+        <header class="cabecalho__input">
+            <h1 class="cabecalho__input__title">Digite seu texto aqui</h1>
+            <textarea class="cabecalho__input__textarea" id="text" rows="15" cols="100" onclick="checkValueInput()"></textarea><br>
+            <label for="text" class="cabecalho__input__label">Não inclua acentos e caracteres especiais</label>            
+        </header>
+
+        <aside class="results">
+            <img src="./assets/img/logo_index.png" class="results__img" alt="desenho de um garoto com cabelo azul segurando uma lupa">
+            <h2 class="results__text">Nenhuma mensagem encontrada</h2>
+
+            <label for="result" class="results__text_encrypted" hidden>Resultado:</label>
+            <textarea id="resultText" rows="10" cols="50" readonly hidden ></textarea><br>
+
+            <button class="button__results__copy" onclick="copyToClipboard()">Copiar</button>
+
+        </aside>        
+    </main> 
+    
+    <section class="button__options">
+        <button class="button__options__encrypt" onclick="encrypt()" disabled>Criptografar</button>
+        <button class="button__options__decrypt" onclick="decrypt()" disabled >Descriptografar</button>
+        <button class="button__options__encrypt" onclick="clearValues()">Limpar Campos</button>
+    </section>
+</body>
+<script src="./scripts/app.js"></script>
+</html>

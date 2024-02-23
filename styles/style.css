@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f5fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    margin:  0 auto;
+    padding: 0 20px;
+    gap: 80px;
+}
+.cabecalho__input__title {
+    color: #003971;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.cabecalho__input__textarea {
+    border: 2px solid #003971;
+    border-radius: 10px;
+}
+
+.cabecalho__input__label {
+    color: #9ca3aa;
+    font-size: 1rem;
+}
+
+.button__options {
+    margin:  0 auto;
+    padding: 0 20px;
+}
+
+.button__options__encrypt {
+    background-color: #003971;
+    color: #ffffff;
+    padding: 12px 70px;
+    border: 1px solid #003971;
+    border-radius: 10px;
+    font-size: 0.85rem;
+}
+
+.button__options__decrypt {
+    background-color: #d6dfe8;
+    color: #5982a5;
+    padding: 12px 70px;
+    border: 1px solid #5982a5;
+    border-radius: 10px;
+    font-size: 0.85rem;
+}
+
+.results {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.results__img {
+    width: 400px;
+}
+
+.results__text {
+    margin-bottom: 30px;
+}
+
+.results__text_encrypted {
+    font-weight: bolder;
+    font-size: 1.25rem;
+}
+
+#result {
+    border: 1px solid #5982a5;
+    border-radius: 10px;
+}
+
+.button__results__copy {
+    background-color: #ffffff;
+    color: #5982a5;
+    padding: 12px 70px;
+    border: 1px solid #5982a5;
+    border-radius: 10px;
+    font-size: 0.85rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .cabecalho__input__textarea {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+
+    .button__options {
+        margin-left: 20px;
+    }
+
+    .results {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .button__options {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
