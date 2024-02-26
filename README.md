@@ -1,6 +1,6 @@
 # Hello, Welcome to my project. I developed using javascript, html and css.
 
-### This project is an encryptor and decryptor that does not accept special characters. You also have the option to copy the content to the clipboard.I developed it as a response to the challenge proposed by Alura in completing the first module of the Front-End Training.
+### This project is an encryptor and decryptor that does not accept special characters. You also have the option to copy the text to the clipboard.I developed it as a response to the challenge proposed by Alura to finish the first module of the Front-End Course.
 
 ### Link Projeto publicado: https://javascript-encrypt.vercel.app/
 
